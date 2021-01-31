@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+/******************/
+/* Style the body */
+/******************/
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/*********************/
+/* Header/logo Title */
+/*********************/
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #41aea9;
+  color: white;
+}
+
+/********************************/
+/* Style the top navigation bar */
+/********************************/
+.navbar {
+  display: flex;
+  background-color: #213e3b;
+}
+
+/**********************************/
+/* Style the navigation bar links */
+/**********************************/
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/********************/
+/* Column container */
+/********************/
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+progress{
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  float: right;
+  width: 130px;
+  height: 20px;
+}
+
+/***********************************************************/
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+/***********************************************************/
+.side {
+  flex: 20%;
+  background-color: #a6f6f1;
+  padding: 20px;
+}
+
+/***************/
+/* Main column */
+/***************/
+.main {
+  flex: 80%;
+  background-color: #e8ffff;
+  padding: 20px;
+}
+.main a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-align: center;
+}
+.main a:hover {
+  background-color: #AAA7A7;
+  color: white;
+}
+
+/****************/
+/*Div from main*/
+/****************/
+.formation {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9ecec;
+}
+.formationIcone {
+  flex: 10%;
+  padding: 5px;
+}
+.formationContent {
+  padding: 5px;
+  flex : 90%;
+}
+
+.stage {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9ecec;
+}
+.stageIcone {
+  flex: 10%;
+  padding: 5px;
+}
+.stageContent {
+  padding: 5px;
+  flex : 90%;
+}
+
+.experiencesPro {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9ecec;
+}
+.experiencesProIcone {
+  flex: 10%;
+  padding: 5px;
+}
+.experiencesProContent {
+  padding: 5px;
+  flex : 90%;
+}
+
+.experiencesBenevoles {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9ecec;
+}
+.experiencesBenevolesIcone {
+  flex: 10%;
+  padding: 5px;
+}
+.experiencesBenevolesContent {
+  padding: 5px;
+  flex : 90%;
+}
+
+.projet {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.projetTitle {
+  padding: 5px;
+  background-color: #c5e3f6;
+  text-align: center;
+}
+.projetDescription {
+  padding: 5px;
+  background-color: #f9ecec;
+}
+.projetIllustration {
+  padding: 5px;
+  background-color: #f9ecec;
+}
+
+/********/
+/*Images*/
+/********/
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.img {
+  max-width: 100%;
+  vertical-align: middle;
+  max-height: 200px;
+}
+
+/* Footer */
+.footer {
+  padding: 2px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer h3 {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}
+.footer a:hover {
+  background-color: #AAA7A7;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
